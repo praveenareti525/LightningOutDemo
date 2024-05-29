@@ -1,0 +1,16 @@
+<html>
+<body>
+    <h1>Lightning Out Demo</h1>
+    <script src="https://coolcolors-dev-ed.my.site.com/LightningOutDemo/lightning/lightning.out.js"></script>
+    <div id="generateEmail" />
+</body>
+<script>
+     $Lightning.use("c:LightningOutDemo", function() {
+        $Lightning.createComponent("c:hello", {},
+           "generateEmail",
+            function(cmp) {
+                console.log('component has been created');
+            });
+    },"https://coolcolors-dev-ed.my.site.com/LightningOutDemo");
+</script>
+</html>
